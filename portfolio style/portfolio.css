@@ -221,7 +221,7 @@ textarea{
     width: 100%;
   }
   .banner, .about-info-container, .skills-container,
-  .resume-container{
+  .resume-container, .footer{
     flex-direction: column;
   }
   nav > ul{
@@ -259,6 +259,19 @@ textarea{
   .skills-container, .resume-container{
     text-align: center;
   }
+  .footer{
+    padding: 0;
+    text-align: center;
+  }
+  .footer-column{
+    width: 100%;
+  }
+  .social-links{
+    justify-content: space-evenly;
+  }
+  .contact-form input[type="text"], .contact-form input[type="email"], textarea{
+    width: 80%;
+  }
 }
 
 
@@ -287,6 +300,15 @@ textarea{
   }
   .resume-container{
     text-align: center;
+  }
+  .footer{
+    padding: 0;
+  }
+  .contact-form input[type="text"], .contact-form input[type="email"], textarea{
+    width: 75%;
+  }
+  .social-links{
+    justify-content: space-evenly;
   }
 
 }
