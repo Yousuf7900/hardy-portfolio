@@ -220,7 +220,7 @@ textarea{
     background-image: none;
     width: 100%;
   }
-  .banner{
+  .banner, .about-info-container, .skills-container{
     flex-direction: column;
   }
   nav > ul{
@@ -251,6 +251,13 @@ textarea{
   .two-btn{
     margin-top: 20px;
   }
+  .about,
+  #what-i-do-description{
+    padding: 0;
+  }
+  .skills-container{
+    text-align: center;
+  }
 }
 
 
@@ -271,6 +278,11 @@ textarea{
   }
   .banner .profile-picture{
     padding-right: 100px;
+  }
+  .skills-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
   }
 
 }
