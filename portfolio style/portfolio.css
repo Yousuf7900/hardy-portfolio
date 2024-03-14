@@ -218,6 +218,7 @@ textarea{
 @media screen and (max-width: 576px) {
   .header{
     background-image: none;
+    width: 100%;
   }
   .banner{
     flex-direction: column;
@@ -232,6 +233,7 @@ textarea{
   .banner .profile-picture
   {
     width: 100%;
+    padding-bottom: 0;
   }
   .nav-title{
     margin-bottom: 10px;
@@ -241,6 +243,7 @@ textarea{
   }
   .banner{
     padding: 20px;
+    padding-bottom: 0;
   }
   .banner-description{
     width: 100%;
@@ -248,4 +251,26 @@ textarea{
   .two-btn{
     margin-top: 20px;
   }
+}
+
+
+/* Responsive for Medium Devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .header{
+    background-position: bottom right, top left;
+    width: 100%;
+  }
+  .banner, nav{
+    flex-direction: column;
+  }
+  .banner-description{
+    width: 100%;
+  }
+  nav > ul{
+    padding-left: 70px;
+  }
+  .banner .profile-picture{
+    padding-right: 100px;
+  }
+
 }
