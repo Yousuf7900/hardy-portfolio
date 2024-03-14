@@ -65,7 +65,7 @@ nav a{
   background-position: bottom right, top left;
 }
 .banner{
-  padding: 30px 30px 0px 200px;
+  padding: 30px 30px 0px 150px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -205,4 +205,47 @@ textarea{
   display: flex;
   gap: 20px;
   margin-top: 30px;
+}
+
+
+.hide{
+  display: none;
+}
+
+/* Responsive Design Starts from Here */
+
+/* Responsive Small device */
+@media screen and (max-width: 576px) {
+  .header{
+    background-image: none;
+  }
+  .banner{
+    flex-direction: column;
+  }
+  nav > ul{
+    flex-direction: column;
+    gap: 10px;
+  }
+  nav{
+    flex-direction: column;
+  }
+  .banner .profile-picture
+  {
+    width: 100%;
+  }
+  .nav-title{
+    margin-bottom: 10px;
+  }
+  .banner-content{
+    text-align: center;
+  }
+  .banner{
+    padding: 20px;
+  }
+  .banner-description{
+    width: 100%;
+  }
+  .two-btn{
+    margin-top: 20px;
+  }
 }
